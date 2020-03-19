@@ -8,14 +8,17 @@ import metaprogramming.extensionpoint.IRuleProvider;
 import rules.AleRule;
 
 public class AleRuleProvider implements IRuleProvider {
-
-	@Override
-	public Collection<IRule> getValidationRules() {
-		
-		ArrayList<IRule> ruleSet = new ArrayList<>();
+	
+	private ArrayList<IRule> ruleSet = new ArrayList<>();
+	
+	public AleRuleProvider() {
 		ruleSet.addAll(new EcoreRuleProvider().getValidationRules());
 		ruleSet.add(new AleRule());
 		
+	}
+
+	@Override
+	public Collection<IRule> getValidationRules() {
 		return ruleSet;
 	}
 
