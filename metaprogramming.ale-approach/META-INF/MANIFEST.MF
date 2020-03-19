@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: AleApproach
+Bundle-SymbolicName: metaprogramming.ale-approach;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: metaprogramming.AleApproach
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: metaprogramming.extensionpoint;bundle-version="1.0.0",
+ org.eclipse.core.runtime;bundle-version="3.14.0",
+ org.eclipse.gemoc.dsl;bundle-version="3.0.0",
+ org.eclipse.emf.common,
+ org.eclipse.xtend,
+ org.eclipse.emf.ecoretools.ale.xtext
+Import-Package: metaprogramming.ecoreapproach
