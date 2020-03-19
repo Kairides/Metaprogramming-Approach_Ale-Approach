@@ -92,7 +92,7 @@ public class AleRule implements IRule{
 				return (new Message("The file for the \"ale\" entry does not exist", Severity.ERROR));
 			}
 		}
-		return null;
+		return (new Message("", Severity.DEFAULT));
 	}
 
 }
