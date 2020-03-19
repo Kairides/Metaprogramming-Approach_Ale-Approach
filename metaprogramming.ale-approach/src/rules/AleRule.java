@@ -86,14 +86,7 @@ public class AleRule implements IRule{
 				if(!tagNames.contains("main")) {
 					return (new Message("The Ale file does not contain an \"@main\" operation", Severity.ERROR));
 				}			
-				
-//				for(EObject content : contents) {
-//					TreeIterator<EObject> ct = content.eAllContents();
-//					while (ct.hasNext()) {
-//						ct.next();
-//					}
-//				}
-				
+			
 				
 			}catch (RuntimeException e) {
 				return (new Message("The file for the \"ale\" entry does not exist", Severity.ERROR));
