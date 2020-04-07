@@ -14,9 +14,9 @@ import org.eclipse.emf.ecoretools.ale.Tag;
 import org.eclipse.emf.ecoretools.ale.Unit;
 import org.eclipse.gemoc.dsl.Dsl;
 import org.eclipse.gemoc.dsl.Entry;
-import metaprogramming.extensionpoint.IRule;
-import metaprogramming.extensionpoint.Message;
-import metaprogramming.extensionpoint.Severity;
+import org.eclipse.gemoc.dsl.approach.IRule;
+import org.eclipse.gemoc.dsl.approach.Message;
+import org.eclipse.gemoc.dsl.approach.Severity;
 
 public class AleRule implements IRule{
 
