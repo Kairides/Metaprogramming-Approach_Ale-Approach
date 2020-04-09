@@ -14,10 +14,16 @@ import org.eclipse.emf.ecoretools.ale.Tag;
 import org.eclipse.emf.ecoretools.ale.Unit;
 import org.eclipse.gemoc.dsl.Dsl;
 import org.eclipse.gemoc.dsl.Entry;
-import org.eclipse.gemoc.dsl.approach.IRule;
-import org.eclipse.gemoc.dsl.approach.Message;
-import org.eclipse.gemoc.dsl.approach.Severity;
+import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.IRule;
+import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.Message;
+import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.Severity;
 
+/**
+ * Validation rule used by the Ale meta-programming approach
+ * 
+ * @author GUEGUEN Ronan
+ *
+ */
 public class AleRule implements IRule{
 
 	@Override
