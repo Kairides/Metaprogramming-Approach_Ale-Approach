@@ -2,9 +2,9 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         point="metaprogramming.extensionpoint">
+         point="org.eclipse.gemoc.gemoc_language_workbench.metaprog">
       <approach
-            name="Ale Approach"
+            name="ale"
             validator="metaprogramming.aleapproach.AleRuleProvider">
       </approach>
    </extension>
