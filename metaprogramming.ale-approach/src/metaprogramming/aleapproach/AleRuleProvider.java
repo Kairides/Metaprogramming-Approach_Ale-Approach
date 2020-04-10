@@ -5,8 +5,8 @@ import java.util.Collection;
 
 import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.IRule;
 import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.IRuleProvider;
+import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.EcoreRuleProvider;
 
-import metaprogramming.ecoreapproach.EcoreRuleProvider;
 import rules.AleRule;
 /**
  * RuleProvider used for the Ale meta-programming approach.
