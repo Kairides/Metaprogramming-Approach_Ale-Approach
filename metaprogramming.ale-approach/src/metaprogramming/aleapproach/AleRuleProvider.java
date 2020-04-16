@@ -5,7 +5,7 @@ import java.util.Collection;
 
 import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.IRule;
 import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.IRuleProvider;
-import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.EcoreRuleProvider;
+import org.eclipse.gemoc.xdsmlframework.api.extensions.metaprog.EcoreRule;
 
 import rules.AleRule;
 /**
@@ -23,7 +23,7 @@ public class AleRuleProvider implements IRuleProvider {
 	 * Creates a RuleProvider for the Ale meta-programming approach, contains rules from the Ecore RuleProvider
 	 */
 	public AleRuleProvider() {
-		ruleSet.addAll(new EcoreRuleProvider().getValidationRules());
+		ruleSet.add(new EcoreRule());
 		ruleSet.add(new AleRule());
 		
 	}
